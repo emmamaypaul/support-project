@@ -4,4 +4,7 @@ Dir.glob('./app/{helpers,controllers}/*.rb').each { |file| require file }
 
 #map the controllers to routes
 map('/example') { run ExampleController }
-map('/') { run ApplicationController }
+map('/') { run HomepageController }
+map('/homepage') { run HomepageController }
+map('/create_account') { run CreateAccountController }
+map('/login') { run LoginController }

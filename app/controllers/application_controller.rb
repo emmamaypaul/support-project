@@ -11,6 +11,6 @@ class ApplicationController < Sinatra::Base
 
   not_found do
     title 'Not Found!'
-    erb :not_found
+    erb :error_page
   end
 end

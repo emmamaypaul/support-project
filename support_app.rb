@@ -24,17 +24,7 @@ get '/' do
   erb :homepage
 end
 
-get '/create_account' do
-  erb :create_account
-end
 
-post '/create_account' do
-  # Handle creating the account --> will want to create a class for that
-  # redirects to homepage upon success
-  # otherwise redirects to error page
-  # will want to have this to pass in the @username to the page --> @username = params[:username]
-  erb :create_account
-end
 
 get '/error_page' do
   # any errors will cause the user to be redirected to this page to start
