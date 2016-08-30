@@ -1,6 +1,5 @@
 class CreateAccountController < ApplicationController
 
-
     get '/' do
       erb :create_account
     end
@@ -10,7 +9,7 @@ class CreateAccountController < ApplicationController
       # redirects to homepage upon success
       # otherwise redirects to error page
       # will want to have this to pass in the @username to the page --> @username = params[:username]
-      erb :create_account
+     erb :create_account
     end
 
 end

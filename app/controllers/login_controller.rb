@@ -1,6 +1,10 @@
 class LoginController < ApplicationController
   get '/' do
-    title "Login page"
     erb :login
   end
+  #
+  # post '/' do
+  #   erb :login
+  #
+  # end
 end

@@ -1,5 +1,4 @@
 class ApplicationController < Sinatra::Base
-  helpers ApplicationHelper
 
   #set folder for templates to ../views but make the path absoluate
   set :views, File.expand_path('../../views', __FILE__)
@@ -10,7 +9,6 @@ class ApplicationController < Sinatra::Base
   end
 
   not_found do
-    title 'Not Found!'
     erb :error_page
   end
 end
